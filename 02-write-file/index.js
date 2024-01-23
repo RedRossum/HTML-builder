@@ -15,4 +15,4 @@ stdin.on('data', data => {
 });
 
 process.on('exit', () => stdout.write('Exited from the program.'));
-process.on('SIGINT', process.exit);
+process.on('SIGINT', () => process.exit());
